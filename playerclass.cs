@@ -26,8 +26,6 @@ namespace quizv4
             password = "";
             security_question = 0;
             security_answers = "";
-
-
         }
 
         public string Name

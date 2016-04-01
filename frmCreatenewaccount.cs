@@ -62,7 +62,6 @@ namespace quizv4
         {
             Program.LoadObject(ref players);
            
-
             if (txtUsername.Text == string.Empty)
             {
                 MessageBox.Show("Please enter a username");
@@ -140,8 +139,6 @@ namespace quizv4
                     }
                 }
             }
-            
-
         }
         private void frmCreatenewaccount_Load(object sender, EventArgs e)
         {
@@ -165,7 +162,5 @@ namespace quizv4
             lgin.Show();
             this.Hide();
         }
-
-       
     }
 }

@@ -12,7 +12,7 @@ namespace quizv4
 {
     public partial class landmarksquizQ2 : Form
     {
-        player newplayer;
+        player newplayer = new player();
         int country;
         int points = 10;
         public landmarksquizQ2()

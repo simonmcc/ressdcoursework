@@ -32,13 +32,18 @@ namespace quizv4
         }
         public static void LoadObject(ref player[] thisObject)
         {
-            Stream sr;
-            BinaryFormatter bf = new BinaryFormatter();
-            sr = File.OpenRead("mydata.dat");
-            thisObject = (player[])bf.Deserialize(sr);
-            sr.Close();
-           
+            if (File.Exists("mydata.dat"))
+            {
+                Stream sr;
+                BinaryFormatter bf = new BinaryFormatter();
+                sr = File.OpenRead("mydata.dat");
+                thisObject = (player[])bf.Deserialize(sr);
+                sr.Close();
+            }
+            else 
+            {
+                thisObject = new player[0];
+            }
         }
     }
-   
 }
